@@ -1,0 +1,9 @@
+2021.05.24
+
+1. kiwi_20050217191129_131073_RARE_high_res_axial.nii.gz - obraz oryginalny (256x256x128; 2.234375x0.234375x0.5)
+2. KO - copia obrazu oryginalnego
+3. KI - obraz upsamplowany 2x (258x258x288, 0.232558x 0.232558x0.222222), wykonanie za pomoca progarmu c3d, opcja resample-mm (???)
+4. KO_s1.nii.gz - segmentacja reczna obrazu oryginalnego. Sementacja w programie ITK-SNAP, przekroj po przekroju reczne zaznaczenie ziarenek kiwi.
+5. KO_s1_i.nii.gz - segmentacja reczna (KOs1.nii.gz) obrazu oryginalnego (KO.nii.gz) ze interpolowana do podwojnej rozdzieloczci. Poniewaz jest interpolacja to obraz zawiera piksele w roznej skali jasnosci.
+6. KO_s1_ib - binarna wersja obrazu segmentazji z podowojona rozdzielczoscia (zrobiona za pomoca programu c3d)
+7 KI_LS1.nii.gz - segmentacja interpolowanego obrazu do podwojnej rozdzielczosci, za pomoca programu ITK-SNAP, metoda podwojnego progowania: prog gorny: 3821, prog dolny:212 (inna proba: prog gorny:3027, prog dolny:158, smoothens:8.4)0
